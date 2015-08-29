@@ -20,6 +20,7 @@ nav {
     font-size: 20px;
     color: white;
     font-weight: 100;
+    position: fixed;
 }
 nav > ul {
     text-align: center;
@@ -30,15 +31,18 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     width: auto;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
     text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
     transition: all 0.5s ease;
 }
 nav > ul > li:hover{
-    text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+    color: gray;
     /*color: black;*/
+}
+nav > ul > li > a{
+    padding: 19px 15px 19px 15px;
 }
 h1 {
     color: white;
@@ -96,7 +100,14 @@ h1 > a:hover {
     filter: invert(1) drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 5px white);
 }
 /**********O RESTAURACJI**********/
-
+#o_restauracji{
+    background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 62px);
+}
 /**********MENU**********/
 
 /**********AKTUALNOSCI**********/
