@@ -5,14 +5,17 @@
     src: url('../fonts/aleo/aleo.eot');
     src: url('../fonts/aleo/aleo.eot?#iefix') format('embedded-opentype'), url('../fonts/aleo/aleo.woff2') format('woff2'), url('../fonts/aleo/aleo.woff') format('woff'), url('../fonts/aleo/aleo.ttf') format('truetype'), url('../fonts/aleo/aleo.svg#svgFontName') format('svg');
 }
+
 @font-face {
     font-family: 'quicksand';
     src: url('../fonts/quicksand/quicksand.eot');
     src: url('../fonts/quicksand/quicksand.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand/quicksand.woff2') format('woff2'), url('../fonts/quicksand/quicksand.woff') format('woff'), url('../fonts/quicksand/quicksand.ttf') format('truetype'), url('../fonts/quicksand/quicksand.svg#svgFontName') format('svg');
 }
+
 body {
     font-family: 'quicksand'
 }
+
 nav {
     width: 100%;
     height: 62px;
@@ -20,14 +23,16 @@ nav {
     font-size: 20px;
     color: white;
     font-weight: 100;
-    position: fixed;
+    /*position: fixed;*/
 }
+
 nav > ul {
     text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
+
 nav > ul > li {
     display: inline-block;
     width: auto;
@@ -37,13 +42,23 @@ nav > ul > li {
     text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
     transition: all 0.5s ease;
 }
-nav > ul > li:hover{
+
+nav > ul > li:hover {
     color: gray;
     /*color: black;*/
 }
-nav > ul > li > a{
+
+nav > ul > li > a {
     padding: 19px 15px 19px 15px;
 }
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
 h1 {
     color: white;
     margin-left: auto;
@@ -52,18 +67,45 @@ h1 {
     font-weight: 100;
     text-align: center;
 }
+
 h1 > a {
     color: white;
     text-decoration: none;
     transition: all 0.5s ease;
 }
+
 h1 > a:hover {
     color: black;
     text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px white;
 }
+
+h2 {
+    font-family: "aleo";
+    font-size: 36px;
+    color: #663113;
+    background: url(../img/ornament.png) no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: 50% 40px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+h3{
+    font-family: "aleo";
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #2a2d2c;
+}
+
+p, .more_about_restaurant{
+    font-size: 20px;
+    color: #2a2d2c;
+}
+
 /**********START**********/
 
-#start {
+section#start {
     background: url(../img/backgrounds/start.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -71,47 +113,74 @@ h1 > a:hover {
     background-size: cover;
     height: calc(100vh - 62px);
 }
-#start > .wrapper {
+
+section#start > .wrapper {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 50%;
     margin-left: 5%;
 }
-#start > .wrapper > figure > img {
+
+section#start > .wrapper > figure > img {
     margin-bottom: 3.5vh;
     width: 50vw;
 }
-#start > .wrapper > .icons {
+
+section#start > .wrapper > .icons {
     margin-top: 5vh;
     text-align: center;
 }
-#start > .wrapper > .icons > figure {
+
+section#start > .wrapper > .icons > figure {
     display: inline-block;
     margin: 0 5px 0 5px;
     /*margin: 5vh 5px 0px 5px;*/
 }
-#start > .wrapper > .icons > figure > a > img {
+
+section#start > .wrapper > .icons > figure > a > img {
     width: 50px;
     transition: all 0.5s ease;
 }
-#start > .wrapper > .icons > figure > a > img:hover {
+
+section#start > .wrapper > .icons > figure > a > img:hover {
     transform: scale(1.2);
     filter: invert(1) drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 5px white);
 }
+
+
 /**********O RESTAURACJI**********/
-#o_restauracji{
-    background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: calc(100vh - 62px);
+
+section#o_restauracji {
+    background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center;
+    /*height: calc(100vh - 62px);*/
+    padding: 5%;
 }
+
+.add_margin_to_section{
+    margin-top: 62px;
+}
+
+section#o_restauracji > .wrapper{
+    width: 50%;
+}
+
+section#o_restauracji > .wrapper > p > a {
+    display: block;
+    cursor: pointer;
+    padding: 20px 0 20px 0;
+    color: #663113;
+    font-weight: 900;
+}
+
+
 /**********MENU**********/
+
 
 /**********AKTUALNOSCI**********/
 
+
 /**********GALERIA**********/
+
 
 /**********KONTAKT**********/
