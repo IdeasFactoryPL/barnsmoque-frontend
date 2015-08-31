@@ -16,6 +16,10 @@ body {
     font-family: 'quicksand'
 }
 
+section {
+    padding: 5%;
+}
+
 nav {
     width: 100%;
     height: 62px;
@@ -84,24 +88,25 @@ h2 {
     font-size: 36px;
     color: #663113;
     background: url(../img/ornament.png) no-repeat;
-    /*background-attachment: fixed;*/
+    font-weight: 100;
     background-position: 50% 40px;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
-h3{
+h3 {
     font-family: "aleo";
     font-weight: 100;
-    font-size: 20px;
-    margin-bottom: 18px;
+    font-size: 22px;
+    margin-bottom: 35px;
     color: #2a2d2c;
 }
 
-p, .more_about_restaurant{
-    font-size: 20px;
+p, .more_about_restaurant {
+    font-size: 22px;
     color: #2a2d2c;
 }
+
 
 /**********START**********/
 
@@ -112,6 +117,7 @@ section#start {
     -o-background-size: cover;
     background-size: cover;
     height: calc(100vh - 62px);
+    padding: 0;
 }
 
 section#start > .wrapper {
@@ -153,31 +159,258 @@ section#start > .wrapper > .icons > figure > a > img:hover {
 
 section#o_restauracji {
     background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center;
-    /*height: calc(100vh - 62px);*/
-    padding: 5%;
 }
 
-.add_margin_to_section{
+.add_margin_to_section {
     margin-top: 62px;
 }
 
-section#o_restauracji > .wrapper{
+section#o_restauracji > .wrapper {
     width: 50%;
 }
+
+section#o_restauracji > .wrapper > p {}
 
 section#o_restauracji > .wrapper > p > a {
     display: block;
     cursor: pointer;
-    padding: 20px 0 20px 0;
+    margin-top: 30px;
+    padding: 5px 0 5px 0;
     color: #663113;
     font-weight: 900;
+    width: 0;
+}
+
+section#o_restauracji > .wrapper > p > a:hover {
+    opacity: .7;
+}
+
+section#o_restauracji > .wrapper > .more_about_restaurant {
+    margin-top: 30px;
 }
 
 
 /**********MENU**********/
 
+section#menu {
+    background: url(../img/backgrounds/menu.jpg) no-repeat bottom center;
+}
+
+section#menu > h2 {
+    margin-top: 50px;
+    color: white;
+    font-size: 80px;
+    background: url(../img/ornament.png) no-repeat;
+    background-position: 50% 75px;
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+}
+
+section#menu > .wrapper {
+    margin-left: 5%;
+}
+
+section#menu > .wrapper > a {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+section#menu > .wrapper > a:first-child {
+    margin-right: 15%;
+}
+
+section#menu > a:last-child {
+    margin-left: 15%;
+}
+
+section#menu > .wrapper > a > div > figure > img {
+    width: 40%;
+    filter: drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+    transition: all 0.5s ease;
+}
+
+.figcaption_hover {
+    filter: invert(1) drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+    transform: scale(0.9);
+}
+
+section#menu > .wrapper > a > div > figure > figcaption {
+    margin-top: 50px;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 2px black 0 0 10px black;
+    background: url(../img/flag.png) no-repeat;
+    background-position: 50% 0px;
+    padding: 10px 0 10px 0;
+    filter: drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+    transition: all 0.5s ease;
+}
+
 
 /**********AKTUALNOSCI**********/
+
+section#aktualnosci {
+    background: url(../img/backgrounds/patterns/aktualnosci.png);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+section#aktualnosci > article {
+    padding-left: 130px;
+    padding-top: 20px;
+    /*padding-right: 130px;*/
+    margin-bottom: 5%;
+    background: url(../img/icons/calendar.png) no-repeat;
+    background-size: 100px;
+}
+
+section#aktualnosci > article:last-child {
+    margin-bottom: 0;
+}
+
+section#aktualnosci > article > h2 {
+    padding-bottom: calc(10% - 20px);
+}
+
+section#aktualnosci > article > header {
+    font-family: "aleo";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section#aktualnosci > article > h4 {
+    font-size: 16px;
+    color: #663113;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+section#aktualnosci > article > p {}
+
+.day01 {
+    background: url(../img/icons/calendar/01.png) no-repeat;
+}
+
+.day02 {
+    background: url(../img/icons/calendar/02.png) no-repeat;
+}
+
+.day03 {
+    background: url(../img/icons/calendar/03.png) no-repeat;
+}
+
+.day04 {
+    background: url(../img/icons/calendar/04.png) no-repeat;
+}
+
+.day05 {
+    background: url(../img/icons/calendar/05.png) no-repeat;
+}
+
+.day06 {
+    background: url(../img/icons/calendar/06.png) no-repeat;
+}
+
+.day07 {
+    background: url(../img/icons/calendar/07.png) no-repeat;
+}
+
+.day08 {
+    background: url(../img/icons/calendar/08.png) no-repeat;
+}
+
+.day09 {
+    background: url(../img/icons/calendar/09.png) no-repeat;
+}
+
+.day10 {
+    background: url(../img/icons/calendar/10.png) no-repeat;
+}
+
+.day11 {
+    background: url(../img/icons/calendar/11.png) no-repeat;
+}
+
+.day12 {
+    background: url(../img/icons/calendar/12.png) no-repeat;
+}
+
+.day13 {
+    background: url(../img/icons/calendar/13.png) no-repeat;
+}
+
+.day14 {
+    background: url(../img/icons/calendar/14.png) no-repeat;
+}
+
+.day15 {
+    background: url(../img/icons/calendar/15.png) no-repeat;
+}
+
+.day16 {
+    background: url(../img/icons/calendar/16.png) no-repeat;
+}
+
+.day17 {
+    background: url(../img/icons/calendar/17.png) no-repeat;
+}
+
+.day18 {
+    background: url(../img/icons/calendar/18.png) no-repeat;
+}
+
+.day19 {
+    background: url(../img/icons/calendar/19.png) no-repeat;
+}
+
+.day20 {
+    background: url(../img/icons/calendar/20.png) no-repeat;
+}
+
+.day21 {
+    background: url(../img/icons/calendar/21.png) no-repeat;
+}
+
+.day22 {
+    background: url(../img/icons/calendar/22.png) no-repeat;
+}
+
+.day23 {
+    background: url(../img/icons/calendar/23.png) no-repeat;
+}
+
+.day24 {
+    background: url(../img/icons/calendar/24.png) no-repeat;
+}
+
+.day25 {
+    background: url(../img/icons/calendar/25.png) no-repeat;
+}
+
+.day26 {
+    background: url(../img/icons/calendar/26.png) no-repeat;
+}
+
+.day27 {
+    background: url(../img/icons/calendar/27.png) no-repeat;
+}
+
+.day28 {
+    background: url(../img/icons/calendar/28.png) no-repeat;
+}
+
+.day29 {
+    background: url(../img/icons/calendar/29.png) no-repeat;
+}
+
+.day30 {
+    background: url(../img/icons/calendar/30.png) no-repeat;
+}
+
+.day31 {
+    background: url(../img/icons/calendar/31.png) no-repeat;
+}
 
 
 /**********GALERIA**********/
