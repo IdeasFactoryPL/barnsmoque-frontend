@@ -188,14 +188,14 @@ section#o_restauracji > .wrapper > p > a {
 #kontakt {
     background: url(../img/backgrounds/patterns/kontakt.png);
     overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 
 #kontakt .left-side {
     float: left;
     width: 66%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #kontakt_www, #kontakt_miejsce {
@@ -209,23 +209,30 @@ section#o_restauracji > .wrapper > p > a {
 }
 
 #kontakt img {
-    width: 13%;
+    width: 15%;
     float: left;
 }
 
 #kontakt figure {
     display:inline-block;
-    margin: 0 0 30px 50px;
+    margin: 40px 0 40px 13%;
 }
 
 #kontakt figcaption {
     width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 22px;
 }
 
 #kontakt figcaption a {
     text-decoration: none;
     color: black;
 
+}
+
+#kontakt iframe {
+    height: 550px;
 }
 
 
