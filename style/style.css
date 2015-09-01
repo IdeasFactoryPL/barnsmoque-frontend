@@ -185,10 +185,54 @@ section#o_restauracji > .wrapper > p > a {
 
 /**********KONTAKT**********/
 
+#kontakt {
+    background: url(../img/backgrounds/patterns/kontakt.png);
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#kontakt .left-side {
+    float: left;
+    width: 66%;
+}
+
+#kontakt_www, #kontakt_miejsce {
+    width: 50%;
+    float: left;
+}
+
+#kontakt .right-side {
+    float: right;
+    width: 34%;
+}
+
+#kontakt img {
+    width: 13%;
+    float: left;
+}
+
+#kontakt figure {
+    display:inline-block;
+    margin: 0 0 30px 50px;
+}
+
+#kontakt figcaption {
+    width: 60%;
+}
+
+#kontakt figcaption a {
+    text-decoration: none;
+    color: black;
+
+}
+
 
 /**********FOOTER**********/
 
 footer {
+    font-family: 'quicksand';
     overflow: hidden;
     background-color: #2a2d2c;
 /*    height: 135px;*/
