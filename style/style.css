@@ -414,16 +414,10 @@ section#aktualnosci > article > p {}
 
 
 /**********GALERIA**********/
-
 #galeria {
+    width: 100%;
     padding: 0;
-    margin: 0;
-    display: inline;
-}
-
-#galeria figure {
-    margin 0;
-    padding: 0;
+    line-height: 0;
 }
 
 .small_photos {
@@ -432,15 +426,13 @@ section#aktualnosci > article > p {}
 
 .small_photos img {
     width: 100%;
-    margin 0;
-    padding: 0;
 }
 
-
-#galeria .galeria_first, #galeria .galeria_second {
+#galeria .galeria_first,
+#galeria .galeria_second {
     width: 25%;
-    
 }
+
 .galeria_third {
     width: 37.5%;
 }
@@ -449,17 +441,20 @@ section#aktualnosci > article > p {}
     overflow: hidden;
 }
 
-.gallery_big, .gallery_ultra_big {
+.gallery_big,
+.gallery_ultra_big {
     width: 100%;
 }
 
-.small_photos figure{
+.small_photos figure {
     width: 50%;
-    display: inline-block;
     float: left;
 }
 
-.galeria_first, .galeria_second, .galeria_third, .galeria_fourth {
+.galeria_first,
+.galeria_second,
+.galeria_third,
+.galeria_fourth {
     float: left;
 }
 
@@ -470,9 +465,6 @@ section#aktualnosci > article > p {}
 .galeria_fourth .small_photos figure {
     width: 100%;
 }
-
-
-
 
 
 /**********KONTAKT**********/
@@ -488,15 +480,14 @@ section#aktualnosci > article > p {}
     overflow: hidden;
 }
 
-
 #kontakt .left-side {
     float: left;
     width: 66%;
-
     padding: 7% 0 7% 0;
 }
 
-#kontakt_www, #kontakt_miejsce {
+#kontakt_www,
+#kontakt_miejsce {
     width: 50%;
     float: left;
 }
@@ -512,7 +503,7 @@ section#aktualnosci > article > p {}
 }
 
 #kontakt figure {
-    display:inline-block;
+    display: inline-block;
     margin: 42px 0 42px 13%;
 }
 
@@ -526,7 +517,6 @@ section#aktualnosci > article > p {}
 #kontakt figcaption a {
     text-decoration: none;
     color: black;
-
 }
 
 #kontakt iframe {
@@ -540,7 +530,6 @@ footer {
     font-family: 'quicksand';
     overflow: hidden;
     background-color: #2a2d2c;
-/*    height: 135px;*/
     color: #ffffff;
 }
 
@@ -563,7 +552,6 @@ footer .left_side p {
 footer .center {
     width: 33%;
     float: left;
-   
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -574,7 +562,6 @@ footer .center img {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 footer .right_side {
     padding-top: 36px;
@@ -587,3 +574,35 @@ footer .right_side {
 footer .right_side p {
     margin-right: 20px;
 }
+
+@media screen and (max-width: 991px) {
+    footer {
+        background-color: aqua;
+    }
+    
+    
+    /**********GALERIA**********/
+    
+    #galeria .galeria_first, #galeria .galeria_second {
+        width: 50%;
+    }
+    
+    .galeria_third {
+        width: 75%;
+    }
+
+    .galeria_fourth {
+        width: 25%;
+    }
+
+    
+    /**********KONTAKT**********/
+    
+    
+    
+    /**********FOOTER**********/
+}
+    
+    
+
+    
