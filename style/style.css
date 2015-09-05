@@ -614,19 +614,19 @@ footer .right_side p {
         width: 100%;
     }
     
-    #kontakt .right-side, #kontakt .left-side {
-        width: 50%;
+    #kontakt .left-side {
+        width: 60%;
         float: left;
+    }
+    
+    #kontakt .right-side {
+        width: 40%;
     }
     
     #kontakt .left-side {
         padding-top: 30px;
     }
     
-    #kontakt figcaption {
-        font-size: 22px;
-    }
-
     #kontakt figure {
         margin: 22px 0 22px 13%;
     }
@@ -634,13 +634,45 @@ footer .right_side p {
     #kontakt figcaption {
         width: 60%;
         margin-left: 18%;
-        margin-top: 5%;
+        margin-top: 3%;
         font-size: 22px;
+    }
+    
+    #kontakt img {
+        width: 10%;
     }
     
     /**********FOOTER**********/
 }
     
+@media (max-width: 800px) {
     
+    #kontakt .left-side, #kontakt .right-side {
+        width: 100%;
+    }
+    
+    #kontakt img {
+        width: 13%;
+    }
+    
+    #kontakt figcaption {
+        margin-left: 20%;
+        font-size: 22px;
+        margin-top: 3%;
+
+    }
+    
+    
+    #kontakt_www,
+    #kontakt_miejsce {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    #kontakt figure {
+        width: 100%;
+    }
+}
 
     
