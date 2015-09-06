@@ -777,6 +777,10 @@ footer .center-small {
         padding: 0;
     }
     
+    footer .right_side p {
+        margin-right: 0;;
+    }
+    
 }
     
 @media (max-width: 500px) {
