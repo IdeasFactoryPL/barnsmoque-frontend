@@ -538,10 +538,10 @@ footer p {
 }
 
 footer .left_side {
-    padding-top: 45px;
+    padding-top: 55px;
     padding-bottom: 15px;
     float: left;
-    width: 33%;
+    width: 30%;
     text-align: left;
 }
 
@@ -550,29 +550,33 @@ footer .left_side p {
 }
 
 footer .center {
-    width: 33%;
+    width: 40%;
     float: left;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer .center img {
-    width: 35%;
+    width: 210px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 footer .right_side {
-    padding-top: 22px;
-    padding-bottom: 10px;
+    padding-top: 34px;
+    padding-bottom: 22px;
     float: right;
-    width: 33%;
+    width: 30%;
     text-align: right;
 }
 
 footer .right_side p {
     margin-right: 20px;
+}
+
+footer .center-small {
+    display: none;
 }
 
 @media screen and (max-width: 1401px) {
@@ -588,9 +592,8 @@ footer .right_side p {
     }
 
     #kontakt iframe {
-        height: 530px;
+        height: 640px;
     }
-
     
 }
 
@@ -609,6 +612,8 @@ footer .right_side p {
     .galeria_fourth {
         width: 25%;
     }
+    
+    
 
     
     /**********KONTAKT**********/
@@ -654,9 +659,34 @@ footer .right_side p {
     }
     
     /**********FOOTER**********/
+    
+    footer .center img {
+        width: 180px;    
+    }
+    
+    footer p {
+        font-size: 18px;
+    }
+    
+    footer .right_side {
+        padding-top: 26px;
+    }
+    
+    footer .left_side {
+        padding-top: 48px;
+    }
+    
 }
     
 @media (max-width: 800px) {
+    
+    footer .center-small {
+        display: block;   
+    }
+    
+    footer .center {
+        display: none;
+    }
     
     #kontakt .left-side, #kontakt .right-side {
         width: 100%;
@@ -687,6 +717,37 @@ footer .right_side p {
     #kontakt iframe {
         height: 400px;
     }
+    
+    footer figure {
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 250px;  
+    }
+    
+    footer .center-small img {
+        width: 250px;    
+    }
+    
+    footer p {
+        font-size: 22px;
+    }
+
+    footer .center-small {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    footer .right_side {
+        width: 50%;
+        display: block;
+        float: right;
+    }
+    
+    footer .left_side {
+        width: 50%;
+        display: block;
+    }
+
 }
 
 @media (max-width: 651px) {
@@ -694,5 +755,39 @@ footer .right_side p {
     #kontakt figure {
         margin-left: 2%;;
     }
+    
+    footer {
+        position: relative;
+    }
+    
+    footer .right_side {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 70px;
+        margin-left: 80px;
+    }
+    
+    footer .left_side {
+        width: auto;
+        clear: both;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 0;
+    }
+    
 }
     
+@media (max-width: 500px) {
+    
+     #kontakt figcaption {
+        font-size: 16px;
+    }
+    
+    #kontakt iframe {
+        height: 350px;
+    }
+    #kontakt figcaption {
+    width: auto;
+}
