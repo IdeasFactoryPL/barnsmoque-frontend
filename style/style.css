@@ -74,7 +74,7 @@ h1 {
     color: white;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30pt;
+    font-size: 38px;
     font-weight: 100;
     text-align: center;
 }
@@ -520,8 +520,8 @@ section#aktualnosci > article > p {}
 
 #kontakt figcaption {
     width: 60%;
-    margin-left: 20%;
-    margin-top: 20px;
+    margin-left: 18%;
+    margin-top: 5%;
     font-size: 22px;
 }
 
@@ -772,9 +772,9 @@ footer p {
 
 footer .left_side {
     padding-top: 55px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     float: left;
-    width: 33%;
+    width: 30%;
     text-align: left;
 }
 
@@ -783,24 +783,24 @@ footer .left_side p {
 }
 
 footer .center {
-    width: 33%;
+    width: 40%;
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 footer .center img {
-    width: 40%;
+    width: 210px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 footer .right_side {
-    padding-top: 36px;
-    padding-bottom: 20px;
+    padding-top: 34px;
+    padding-bottom: 22px;
     float: right;
-    width: 33%;
+    width: 30%;
     text-align: right;
 }
 
@@ -808,10 +808,30 @@ footer .right_side p {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 991px) {
-    footer {
-        background-color: aqua;
+footer .center-small {
+    display: none;
+}
+
+@media screen and (max-width: 1401px) {
+    
+    /**********KONTAKT**********/
+    
+    #kontakt figcaption {
+        font-size: 16px;
     }
+
+    #kontakt figure {
+        margin-left: 6%;
+    }
+
+    #kontakt iframe {
+        height: 640px;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+
     /**********GALERIA**********/
     #galeria .galeria_first,
     #galeria .galeria_second {
@@ -823,6 +843,183 @@ footer .right_side p {
     .galeria_fourth {
         width: 25%;
     }
+    
     /**********KONTAKT**********/
+    
+    #kontakt_www,
+    #kontakt_miejsce {
+        clear: both;
+        width: 100%;
+    }
+    
+    #kontakt .left-side {
+        width: 60%;
+        float: left;
+    }
+    
+    #kontakt .right-side {
+        width: 40%;
+    }
+    
+    #kontakt .left-side {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+    }
+    
+    #kontakt figure {
+        margin: 22px 0 22px 13%;
+    }
+    
+    #kontakt figcaption {
+        width: 60%;
+        margin-left: 18%;
+        margin-top: 3%;
+        font-size: 22px;
+    }
+    
+    #kontakt img {
+        width: 10%;
+    }
+    
+    #kontakt iframe {
+        height: 620px;
+    }
+    
     /**********FOOTER**********/
+    
+    footer .center img {
+        width: 180px;    
+    }
+    
+    footer p {
+        font-size: 18px;
+    }
+    
+    footer .right_side {
+        padding-top: 26px;
+    }
+    
+    footer .left_side {
+        padding-top: 48px;
+    }
+    
+}
+    
+@media (max-width: 800px) {
+    
+    footer .center-small {
+        display: block;   
+    }
+    
+    footer .center {
+        display: none;
+    }
+    
+    #kontakt .left-side, #kontakt .right-side {
+        width: 100%;
+    }
+    
+    #kontakt img {
+        width: 11%;
+    }
+    
+    #kontakt figcaption {
+        margin-left: 20%;
+        font-size: 22px;
+        margin-top: 3%;
+
+    }
+    
+    
+    #kontakt_www,
+    #kontakt_miejsce {
+        margin-left: 8%;
+        width: 100%;
+    }
+    
+    #kontakt figure {
+        width: 80%;
+    }
+    
+    #kontakt iframe {
+        height: 400px;
+    }
+    
+    footer figure {
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 250px;  
+    }
+    
+    footer .center-small img {
+        width: 250px;    
+    }
+    
+    footer p {
+        font-size: 22px;
+    }
+
+    footer .center-small {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    footer .right_side {
+        width: 50%;
+        display: block;
+        float: right;
+    }
+    
+    footer .left_side {
+        width: 50%;
+        display: block;
+    }
+
+}
+
+@media (max-width: 651px) {
+    
+    #kontakt figure {
+        margin-left: 2%;;
+    }
+    
+    footer {
+        position: relative;
+    }
+    
+    footer .right_side {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 70px;
+        margin-left: 80px;
+    }
+    
+    footer .left_side {
+        width: auto;
+        clear: both;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 0;
+    }
+    
+    footer .right_side p {
+        margin-right: 0;;
+    }
+    
+}
+    
+@media (max-width: 500px) {
+    
+     #kontakt figcaption {
+        font-size: 16px;
+    }
+    
+    #kontakt iframe {
+        height: 350px;
+    }
+    #kontakt figcaption {
+    width: auto;
 }
