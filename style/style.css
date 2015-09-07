@@ -426,6 +426,7 @@ section#aktualnosci > article > p {}
 
 /**********GALERIA**********/
 
+
 #galeria {
     width: 100%;
     padding: 0;
@@ -494,7 +495,7 @@ section#aktualnosci > article > p {}
 #kontakt .left-side {
     float: left;
     width: 66%;
-    padding: 7% 0 7% 0;
+    padding: 40px 0 40px 0;
 }
 
 #kontakt_www,
@@ -509,20 +510,22 @@ section#aktualnosci > article > p {}
 }
 
 #kontakt img {
-    width: 15%;
+    width: 64px;
     float: left;
 }
 
 #kontakt figure {
     display: inline-block;
-    margin: 42px 0 42px 13%;
+    margin: 38px 0 38px 13%;
+    width: 100%;
 }
 
 #kontakt figcaption {
     width: 60%;
-    margin-left: 18%;
-    margin-top: 5%;
+    margin-left: 4%;
+    margin-top: 20px;
     font-size: 22px;
+    float: left;
 }
 
 #kontakt figcaption a {
@@ -531,7 +534,7 @@ section#aktualnosci > article > p {}
 }
 
 #kontakt iframe {
-    height: 745px;
+    height: 512px;
 }
 
 
@@ -771,7 +774,7 @@ footer p {
 }
 
 footer .left_side {
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 15px;
     float: left;
     width: 30%;
@@ -797,7 +800,7 @@ footer .center img {
 }
 
 footer .right_side {
-    padding-top: 34px;
+    padding-top: 28px;
     padding-bottom: 22px;
     float: right;
     width: 30%;
@@ -822,10 +825,6 @@ footer .center-small {
 
     #kontakt figure {
         margin-left: 6%;
-    }
-
-    #kontakt iframe {
-        height: 640px;
     }
     
 }
@@ -862,28 +861,28 @@ footer .center-small {
     }
     
     #kontakt .left-side {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         
     }
     
     #kontakt figure {
-        margin: 22px 0 22px 13%;
+        margin: 16px 0 16px 18%;
     }
     
     #kontakt figcaption {
         width: 60%;
-        margin-left: 18%;
-        margin-top: 3%;
-        font-size: 22px;
+        margin-left: 35px;
+        margin-top: 18px;
+        font-size: 20px;
     }
     
     #kontakt img {
-        width: 10%;
+        width: 60px;
     }
     
     #kontakt iframe {
-        height: 620px;
+        height: 605px;
     }
     
     /**********FOOTER**********/
@@ -925,7 +924,7 @@ footer .center-small {
     }
     
     #kontakt figcaption {
-        margin-left: 20%;
+        margin-left: 30px;
         font-size: 22px;
         margin-top: 3%;
 
@@ -934,7 +933,7 @@ footer .center-small {
     
     #kontakt_www,
     #kontakt_miejsce {
-        margin-left: 8%;
+        margin-left: 20px;
         width: 100%;
     }
     
@@ -981,7 +980,7 @@ footer .center-small {
 @media (max-width: 651px) {
     
     #kontakt figure {
-        margin-left: 2%;;
+        margin-left: 10%;
     }
     
     footer {
@@ -1003,15 +1002,21 @@ footer .center-small {
         right: 10px;
         bottom: 10px;
         padding: 0;
+        font-size: 14px;
     }
     
     footer .right_side p {
-        margin-right: 0;;
+        margin-right: 0;
     }
     
 }
     
 @media (max-width: 500px) {
+    
+    #kontakt figure {
+        margin-left: 7%;
+    }
+    
     
      #kontakt figcaption {
         font-size: 16px;
@@ -1020,6 +1025,27 @@ footer .center-small {
     #kontakt iframe {
         height: 350px;
     }
+    
     #kontakt figcaption {
-    width: auto;
+        width: auto;
+    }
+}
+    
+@media (max-width: 400px) {
+     
+    #kontakt figure {
+        margin-left: 0;
+    }  
+    
+     #kontakt figcaption {
+        margin-left: 10px;
+         font-size: 14px;
+    }
+    
+    #kontakt iframe {
+        height: 250px;
+    }
+    
+    
+    
 }
