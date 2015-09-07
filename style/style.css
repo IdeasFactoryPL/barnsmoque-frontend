@@ -133,9 +133,16 @@ section#start > .wrapper {
     margin-left: 5%;
 }
 
+section#start > .wrapper > figure {
+    text-align: center;
+}
+
 section#start > .wrapper > figure > img {
     margin-bottom: 3.5vh;
-    width: 100%;
+    max-height: 30vw;
+    width: 46vw;
+    max-width: 70vw;
+    height: auto;
 }
 
 section#start > .wrapper > figure > img, section#start > .wrapper > h1, section#start > .wrapper > .icons {
@@ -426,7 +433,6 @@ section#aktualnosci > article > p {}
 
 
 /**********GALERIA**********/
-
 
 #galeria {
     width: 100%;
@@ -774,6 +780,36 @@ footer .center-small {
 }
 
 @media screen and (max-width: 1401px) {
+    /**********CUSTOM MENUS************/
+    #custom_menu > .photo, #custom_drinks > .photo {
+        width: 300px;
+    }
+    #custom_menu > .photo > article > header, #custom_drinks > .photo > article > header {
+        font-size: 35px;
+        background-size: 261px;
+        background-position: 50% 62%;
+    }
+    #custom_menu > .photo > article > a, #custom_drinks > .photo > article > a {
+        width: 60%;
+        left: 20%;
+        bottom: 30px;
+        height: calc(0.6 * 300px);
+    }
+    #custom_menu > .photo > article > a > figure, #custom_drinks > .photo > article > a > figure {
+        width: 100%;
+        height: 100%;
+    }
+    #custom_menu > .photo > article > a > figure > img {
+        margin-top: 27px;
+margin-left: 16px;
+    }
+    #custom_drinks > .photo > article > a > figure > img{
+        margin-top: 33px;
+margin-left: 9px;
+    }
+    #custom_menu > .wrapper, #custom_drinks > .wrapper{
+        margin-left: 300px;
+    }
     /**********O_RESTAURACJI**********/
     section#o_restauracji > .wrapper {
         width: 100%;
@@ -788,10 +824,18 @@ footer .center-small {
     #kontakt figure {
         margin-left: 6%;
     }
-
 }
 
 @media screen and (max-width: 1120px) {
+    /**********AKTUALNOSCI**********/
+    section#aktualnosci {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    section#aktualnosci > article {
+        padding-left: 60px;
+        background-size: 50px auto;
+    }
     /**********MENU**********/
     section#menu > .wrapper > a:first-child {
         margin-right: 0px;
@@ -807,15 +851,14 @@ footer .center-small {
 }
 
 @media screen and (max-width: 991px) {
-    /**********AKTUALNOSCI**********/
-    section#aktualnosci {
-        padding-left: 15%;
-        padding-right: 15%;
+    /**********CUSTOM MENUS**********/
+    #custom_menu > .photo, #custom_drinks > .photo{
+        display: none;
     }
-    section#aktualnosci > article {
-        padding-left: 60px;
-        background-size: 50px auto;
-    }
+    
+#custom_menu > .wrapper, #custom_drinks > .wrapper{
+    margin-left: 0px;
+}
     /**********GALERIA**********/
     #galeria .galeria_first, #galeria .galeria_second {
         width: 50%;
@@ -840,7 +883,7 @@ footer .center-small {
     }
     #kontakt .left-side {
         padding-top: 20px;
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
     }
     #kontakt figure {
         margin: 16px 0 16px 18%;
@@ -885,10 +928,6 @@ footer .center-small {
     section#start > .wrapper > figure {
         text-align: center
     }
-    section#start > .wrapper > figure > img {
-        height: 30vh;
-        width: auto;
-    }
 }
 
 @media (max-width: 800px) {
@@ -909,9 +948,7 @@ footer .center-small {
         font-size: 22px;
         margin-top: 3%;
     }
-    
-    #kontakt_www,
-    #kontakt_miejsce {
+    #kontakt_www, #kontakt_miejsce {
         margin-left: 20px;
         width: 100%;
     }
@@ -1004,11 +1041,9 @@ footer .center-small {
 }
 
 @media (max-width: 500px) {
-    
     #kontakt figure {
         margin-left: 7%;
     }
-
     /********AKTUALNOSCI********/
     section#aktualnosci > article {
         background: none;
@@ -1021,22 +1056,17 @@ footer .center-small {
     #kontakt iframe {
         height: 350px;
     }
-
 }
-    
+
 @media (max-width: 400px) {
-     
     #kontakt figure {
         margin-left: 0;
-    }  
-    
-     #kontakt figcaption {
-        margin-left: 10px;
-         font-size: 14px;
     }
-    
+    #kontakt figcaption {
+        margin-left: 10px;
+        font-size: 14px;
+    }
     #kontakt iframe {
         height: 250px;
     }
-    
 }
