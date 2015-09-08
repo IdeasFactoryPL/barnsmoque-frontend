@@ -527,11 +527,11 @@ section#aktualnosci > article > p {}
     margin-top: 20px;
     font-size: 22px;
     float: left;
+    color: #663113;
 }
 
-#kontakt figcaption a {
+#kontakt a {
     text-decoration: none;
-    color: black;
 }
 
 #kontakt iframe {
@@ -717,6 +717,7 @@ section#aktualnosci > article > p {}
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: 100;
+    padding-right: 30px;
 }
 
 #custom_menu > .wrapper > .col1 > article > h6:last-child, #custom_menu > .wrapper > .col2 > article > h6:last-child, #custom_drinks > .wrapper > .col1 > article > h6:last-child, #custom_drinks > .wrapper > .col2 > article > h6:last-child {
@@ -735,6 +736,16 @@ footer {
 
 footer p {
     color: #ffffff;
+}
+
+footer p > a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+footer p > a:hover{
+    color: gray;
 }
 
 footer .left_side {
@@ -928,6 +939,25 @@ margin-left: 9px;
     section#start > .wrapper > figure {
         text-align: center
     }
+    nav{
+        display: none;
+    }
+    .menu_button{
+        position:fixed;
+        top: 2vw;
+        left: 2vw;
+
+    }
+    .menu_button >img {
+    width: 50px;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 15px white);
+    transition: all .5s ease;
+}
+    .menu_button > img:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1041,6 +1071,11 @@ margin-left: 9px;
 }
 
 @media (max-width: 500px) {
+    /********CUSTOM MENUS********/
+    #custom_menu > .wrapper > .col1, #custom_menu > .wrapper > .col2, #custom_drinks > .wrapper > .col1, #custom_drinks > .wrapper > .col2{
+        width: 100%;
+    }
+
     #kontakt figure {
         margin-left: 7%;
     }
@@ -1055,6 +1090,33 @@ margin-left: 9px;
     }
     #kontakt iframe {
         height: 350px;
+    }
+
+        section#start > .wrapper > h1{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    section#o_restauracji > .wrapper > a{
+        font-size: 18px;
+    }
+    section#menu > h2{
+        font-size: 45px;
+    background-position: 50% 42%;
+    background-size: 84%;
+    }
+    h2{
+        font-size: 26px;
+        background-position: 50% 45%;
+        background-size: 87%;
+    }
+    p, .more_about_restaurant{
+        font-size: 16px;
+    }
+
+    section#aktualnosci > article > header{
+        font-size: 18px;
     }
 }
 
