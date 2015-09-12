@@ -496,6 +496,7 @@ section#aktualnosci > article > p {}
     border: 1px solid white;
     border-right: none;
 }
+
 /*
 #galeria .galeria_fourth .small_photos:last-child,
 bottom
@@ -886,6 +887,12 @@ margin-left: 9px;
     #custom_menu > .photo, #custom_drinks > .photo{
         display: none;
     }
+    
+    
+    #galeria .bez-bordera {
+        border-top: none !important;
+    }
+    
     
 #custom_menu > .wrapper, #custom_drinks > .wrapper{
     margin-left: 0px;
