@@ -33,6 +33,7 @@ nav {
     font-size: 20px;
     color: white;
     font-weight: 100;
+    overflow-y: none;
     /*position: fixed;*/
 }
 
@@ -67,8 +68,15 @@ nav > ul > li > a {
     top: 0;
     z-index: 100;
     position: fixed;
-    width: 100%;
 }
+
+ .close_nav{
+    display:none;
+ }
+
+ .menu_button{
+    display: none;
+ }
 
 h1 {
     color: white;
@@ -178,10 +186,6 @@ section#start > .wrapper > .icons > figure > a > img:hover {
 
 section#o_restauracji {
     background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center;
-}
-
-.add_margin_to_section {
-    margin-top: 62px;
 }
 
 section#o_restauracji > .wrapper {
@@ -967,17 +971,19 @@ margin-left: 9px;
     section#start > .wrapper > figure {
         text-align: center
     }
-    nav{
-        display: block;
-    }
+
     /* Initial menu */
     nav {
-      background-color: #202024;
+      background-color: rgba(32, 32, 36, 0.9);
       left: -285px;  /* start off behind the scenes */
       height: 100%;
       position: fixed;
       width: 285px;
       z-index: 10;
+      display: none;
+      top: 0px;
+      overflow-y: auto;
+      top: 0px;
     }
 
     nav ul {
@@ -986,15 +992,20 @@ margin-left: 9px;
       margin: 0;
       padding: 0;
       display: block;
+      top: 4px;
+      bottom: 10px;
+      transform: translateY(0%);
     }
 
-    nav li {
+    nav ul li {
       border-bottom: 1px solid #636366;
       font-family: 'Open Sans', sans-serif;
       line-height: 45px;
       padding-bottom: 3px;
-      /*padding-left: 20px;*/
+      width: 100%;
       padding-top: 3px;
+      margin-left: 0px;
+        margin-right: 0px;
     }
 
     nav a {
@@ -1004,10 +1015,38 @@ margin-left: 9px;
       text-transform: uppercase;
     }
 
+    nav a:hover{
+        color: #A8A8A8;
+    }
+
+    .close_nav{
+            padding-bottom: 3px;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom:10px;
+  width:40px;
+  height: 40px;
+  display: inline-block;
+    }
+
+    .close_nav:hover{
+        padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom:5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .close_nav > img{
+        height: 100%;
+    }
+
     .menu_button{
         position:fixed;
-        top: 2vw;
-        left: 2vw;
+        top: 15px;
+        left: 15px;
+        display: inline-block;
 
     }
     .menu_button >img {
