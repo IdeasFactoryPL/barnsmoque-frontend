@@ -13,9 +13,7 @@ $('.napoje').click(function(){
 });
 
 $('.close').click(function(){
-	$('section:not(#custom_menu, #custom_drinks), nav, footer').fadeIn("slow");
-	$('#custom_menu, #custom_drinks').hide();
-	$(window).scrollTop(position);
+	closeMenu();
 });
 
 $('.showDrinks').click(function(){
@@ -27,3 +25,15 @@ $('.showMenu').click(function(){
 	$('#custom_drinks').hide();
 	$('#custom_menu').fadeIn("slow");
 });
+
+$(document).keyup(function(e) {
+	if(e.keyCode == 27){
+		closeMenu();
+	}
+});
+
+function closeMenu(){
+	$('section:not(#custom_menu, #custom_drinks), nav, footer').fadeIn("slow");
+	$('#custom_menu, #custom_drinks').hide();
+	$(window).scrollTop(position);
+}

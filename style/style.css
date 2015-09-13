@@ -64,6 +64,10 @@ nav > ul > li > a {
     padding: 19px 15px 19px 15px;
 }
 
+.add_margin_to_section {
+    margin-top: 62px;
+}
+
 .navbar-fixed {
     top: 0;
     z-index: 100;
@@ -186,6 +190,7 @@ section#start > .wrapper > .icons > figure > a > img:hover {
 
 section#o_restauracji {
     background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 section#o_restauracji > .wrapper {
@@ -500,12 +505,46 @@ section#aktualnosci > article > p {}
     border: 1px solid white;
     border-right: none;
 }
+#galeria figure > a{
+    text-decoration: none;
+}
 
-/*
-#galeria .galeria_fourth .small_photos:last-child,
-bottom
-*/
+#galeria figure > a > img{
+    transition: all .5s ease;
+}
 
+#galeria figure > a > img:hover{
+    filter: blur(2px) brightness(1.4);
+}
+
+#galeria figure > a > figcaption{
+color: #FFF;
+position: relative;
+text-align: center;
+vertical-align: top;
+margin-top: -20px;
+text-shadow: 0px 0px 1px #000, 0px 0px 2px #000;
+padding-bottom: 20px;
+white-space: nowrap;
+}
+
+/*figcaption.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+figcaption.text-content figcaption {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}*/
 
 /**********KONTAKT**********/
 
@@ -544,6 +583,12 @@ bottom
     display: inline-block;
     margin: 38px 0 38px 13%;
     width: 100%;
+    transition: all .5s ease;
+}
+
+#kontakt figure:hover {
+    filter: drop-shadow(0px 0px 2px #999);
+    padding-left: 15px;
 }
 
 #kontakt figcaption {
@@ -1019,6 +1064,10 @@ margin-left: 9px;
         color: #A8A8A8;
     }
 
+    .add_margin_to_section {
+    margin-top: 0px;
+}
+
     .close_nav{
             padding-bottom: 3px;
   cursor: pointer;
@@ -1169,6 +1218,9 @@ margin-left: 9px;
     }
     footer .right_side p {
         margin-right: 0;
+    }
+    #galeria figure > a > figcaption{
+        display: none;
     }
 }
 
