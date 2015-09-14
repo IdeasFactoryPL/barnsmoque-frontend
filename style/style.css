@@ -74,13 +74,13 @@ nav > ul > li > a {
     position: fixed;
 }
 
- .close_nav{
-    display:none;
- }
-
- .menu_button{
+.close_nav {
     display: none;
- }
+}
+
+.menu_button {
+    display: none;
+}
 
 h1 {
     color: white;
@@ -130,7 +130,7 @@ p, .more_about_restaurant {
 /**********START**********/
 
 section#start {
-    background: url(../img/backgrounds/start.jpg) no-repeat center center fixed;
+    background: url(../img/backgrounds/start_big.jpg) no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 62px);
     padding: 0;
@@ -189,7 +189,7 @@ section#start > .wrapper > .icons > figure > a > img:hover {
 /**********O RESTAURACJI**********/
 
 section#o_restauracji {
-    background: url(../img/backgrounds/o_restauracji.jpg) no-repeat center center;
+    background: url(../img/backgrounds/o_restauracji_big.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -220,7 +220,8 @@ section#o_restauracji > .wrapper > .more_about_restaurant {
 /**********MENU**********/
 
 section#menu {
-    background: url(../img/backgrounds/menu.jpg) no-repeat bottom center;
+    background: url(../img/backgrounds/menu_big.jpg) no-repeat bottom center;
+    background-size: cover;
 }
 
 section#menu > h2 {
@@ -281,7 +282,7 @@ section#menu > .wrapper > a > div > figure > figcaption {
 /**********AKTUALNOSCI**********/
 
 section#aktualnosci {
-    background: url(../img/backgrounds/patterns/aktualnosci.png);
+    background: url(../img/backgrounds/patterns/aktualnosci.jpg);
     padding-left: 25%;
     padding-right: 25%;
 }
@@ -496,37 +497,39 @@ section#aktualnosci > article > p {}
     border-bottom: none;
 }
 
-#galeria .galeria_second .gallery_big, #galeria .galeria_first  {
+#galeria .galeria_second .gallery_big, #galeria .galeria_first {
     border-bottom: 1px solid white;
 }
-
 
 .gallery_ultra_big {
     border: 1px solid white;
     border-right: none;
 }
-#galeria figure > a{
+
+#galeria figure > a {
     text-decoration: none;
 }
 
-#galeria figure > a > img{
+#galeria figure > a > img {
     transition: all .5s ease;
 }
 
-#galeria figure > a > img:hover{
+#galeria figure > a > img:hover {
+    -webkit-filter: blur(2px) brightness(1.4);
     filter: blur(2px) brightness(1.4);
 }
 
-#galeria figure > a > figcaption{
-color: #FFF;
-position: relative;
-text-align: center;
-vertical-align: top;
-margin-top: -20px;
-text-shadow: 0px 0px 1px #000, 0px 0px 2px #000;
-padding-bottom: 20px;
-white-space: nowrap;
+#galeria figure > a > figcaption {
+    color: #FFF;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -20px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 2px #000;
+    padding-bottom: 20px;
+    white-space: nowrap;
 }
+
 
 /*figcaption.text-content {
   background: rgba(0,0,0,0.5);
@@ -546,6 +549,7 @@ figcaption.text-content figcaption {
   vertical-align: middle;
 }*/
 
+
 /**********KONTAKT**********/
 
 #kontakt {
@@ -554,7 +558,7 @@ figcaption.text-content figcaption {
 }
 
 #kontakt {
-    background: url(../img/backgrounds/patterns/kontakt.png);
+    background: url(../img/backgrounds/patterns/kontakt.jpg);
     overflow: hidden;
 }
 
@@ -587,6 +591,7 @@ figcaption.text-content figcaption {
 }
 
 #kontakt figure:hover {
+    -webkit-filter: drop-shadow(0px 0px 2px #999);
     filter: drop-shadow(0px 0px 2px #999);
     padding-left: 15px;
 }
@@ -612,7 +617,7 @@ figcaption.text-content figcaption {
 /**********CUSTOM MENU*********/
 
 #custom_menu, #custom_drinks {
-    background: url(../img/backgrounds/patterns/menu.png);
+    background: url(../img/backgrounds/patterns/menu.jpg);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -808,13 +813,13 @@ footer p {
     color: #ffffff;
 }
 
-footer p > a{
+footer p > a {
     text-decoration: none;
     color: white;
     transition: all 0.5s ease;
 }
 
-footer p > a:hover{
+footer p > a:hover {
     color: gray;
 }
 
@@ -861,6 +866,16 @@ footer .center-small {
 }
 
 @media screen and (max-width: 1401px) {
+    /***BACKGROUNDS***/
+    section#start {
+        background-image: url(../img/backgrounds/start_medium.jpg);
+    }
+    section#o_restauracji {
+        background-image: url(../img/backgrounds/o_restauracji_medium.jpg);
+    }
+    section#menu {
+        background-image: url(../img/backgrounds/menu_medium.jpg);
+    }
     /**********CUSTOM MENUS************/
     #custom_menu > .photo, #custom_drinks > .photo {
         width: 300px;
@@ -882,13 +897,13 @@ footer .center-small {
     }
     #custom_menu > .photo > article > a > figure > img {
         margin-top: 27px;
-margin-left: 16px;
+        margin-left: 16px;
     }
-    #custom_drinks > .photo > article > a > figure > img{
+    #custom_drinks > .photo > article > a > figure > img {
         margin-top: 33px;
-margin-left: 9px;
+        margin-left: 9px;
     }
-    #custom_menu > .wrapper, #custom_drinks > .wrapper{
+    #custom_menu > .wrapper, #custom_drinks > .wrapper {
         margin-left: 300px;
     }
     /**********O_RESTAURACJI**********/
@@ -933,19 +948,15 @@ margin-left: 9px;
 
 @media screen and (max-width: 991px) {
     /**********CUSTOM MENUS**********/
-    #custom_menu > .photo, #custom_drinks > .photo{
+    #custom_menu > .photo, #custom_drinks > .photo {
         display: none;
     }
-    
-    
     #galeria .bez-bordera {
         border-top: none !important;
     }
-    
-    
-#custom_menu > .wrapper, #custom_drinks > .wrapper{
-    margin-left: 0px;
-}
+    #custom_menu > .wrapper, #custom_drinks > .wrapper {
+        margin-left: 0px;
+    }
     /**********GALERIA**********/
     #galeria .galeria_first, #galeria .galeria_second {
         width: 50%;
@@ -986,8 +997,7 @@ margin-left: 9px;
     }
     #kontakt iframe {
         height: 605px;
-    }    
-    
+    }
     /**********FOOTER**********/
     footer .center img {
         width: 180px;
@@ -1016,102 +1026,103 @@ margin-left: 9px;
     section#start > .wrapper > figure {
         text-align: center
     }
-
     /* Initial menu */
     nav {
-      background-color: rgba(32, 32, 36, 0.9);
-      left: -285px;  /* start off behind the scenes */
-      height: 100%;
-      position: fixed;
-      width: 285px;
-      z-index: 10;
-      display: none;
-      top: 0px;
-      overflow-y: auto;
-      top: 0px;
+        background-color: rgba(32, 32, 36, 0.9);
+        left: -285px;
+        /* start off behind the scenes */
+        height: 100%;
+        position: fixed;
+        width: 285px;
+        z-index: 10;
+        display: none;
+        top: 0px;
+        overflow-y: auto;
+        top: 0px;
     }
-
     nav ul {
-      border-top: 1px solid #636366;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: block;
-      top: 4px;
-      bottom: 10px;
-      transform: translateY(0%);
+        border-top: 1px solid #636366;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        top: 4px;
+        bottom: 10px;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
     }
-
     nav ul li {
-      border-bottom: 1px solid #636366;
-      font-family: 'Open Sans', sans-serif;
-      line-height: 45px;
-      padding-bottom: 3px;
-      width: 100%;
-      padding-top: 3px;
-      margin-left: 0px;
+        border-bottom: 1px solid #636366;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 45px;
+        padding-bottom: 3px;
+        width: 100%;
+        padding-top: 3px;
+        margin-left: 0px;
         margin-right: 0px;
     }
-
     nav a {
-      color: #fff;
-      font-size: 15px;
-      text-decoration: none;
-      text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
     }
-
-    nav a:hover{
+    nav a:hover {
         color: #A8A8A8;
     }
-
     .add_margin_to_section {
-    margin-top: 0px;
-}
-
-    .close_nav{
-            padding-bottom: 3px;
-  cursor: pointer;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom:10px;
-  width:40px;
-  height: 40px;
-  display: inline-block;
+        margin-top: 0px;
     }
-
-    .close_nav:hover{
+    .close_nav {
+        padding-bottom: 3px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+    .close_nav:hover {
         padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom:5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
         width: 50px;
         height: 50px;
     }
-
-    .close_nav > img{
+    .close_nav > img {
         height: 100%;
     }
-
-    .menu_button{
-        position:fixed;
+    .menu_button {
+        position: fixed;
         top: 15px;
         left: 15px;
         display: inline-block;
-
     }
     .menu_button >img {
-    width: 50px;
-    opacity: 0.5;
-    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 15px white);
-    transition: all .5s ease;
+        width: 50px;
+        opacity: 0.5;
+        -webkit-filter: drop-shadow(0 0 5px white) drop-shadow(0 0 15px white);
+        filter: drop-shadow(0 0 5px white) drop-shadow(0 0 15px white);
+        transition: all .5s ease;
     }
-    .menu_button > img:hover{
+    .menu_button > img:hover {
         opacity: 1;
         cursor: pointer;
     }
-    
 }
 
 @media (max-width: 800px) {
+    /***BACKGROUNDS***/
+    section#start {
+        background-image: url(../img/backgrounds/start_small.jpg);
+    }
+    section#o_restauracji {
+        background-image: url(../img/backgrounds/o_restauracji_small.jpg);
+    }
+    section#menu {
+        background-image: url(../img/backgrounds/menu_small.jpg);
+    }
     footer .center-small {
         display: block;
     }
@@ -1219,17 +1230,16 @@ margin-left: 9px;
     footer .right_side p {
         margin-right: 0;
     }
-    #galeria figure > a > figcaption{
+    #galeria figure > a > figcaption {
         display: none;
     }
 }
 
 @media (max-width: 500px) {
     /********CUSTOM MENUS********/
-    #custom_menu > .wrapper > .col1, #custom_menu > .wrapper > .col2, #custom_drinks > .wrapper > .col1, #custom_drinks > .wrapper > .col2{
+    #custom_menu > .wrapper > .col1, #custom_menu > .wrapper > .col2, #custom_drinks > .wrapper > .col1, #custom_drinks > .wrapper > .col2 {
         width: 100%;
     }
-
     #kontakt figure {
         margin-left: 7%;
     }
@@ -1245,31 +1255,29 @@ margin-left: 9px;
     #kontakt iframe {
         height: 350px;
     }
-
-        section#start > .wrapper > h1{
+    section#start > .wrapper > h1 {
         font-size: 22px;
     }
-    h3{
+    h3 {
         font-size: 18px;
     }
-    section#o_restauracji > .wrapper > a{
+    section#o_restauracji > .wrapper > a {
         font-size: 18px;
     }
-    section#menu > h2{
+    section#menu > h2 {
         font-size: 45px;
-    background-position: 50% 42%;
-    background-size: 84%;
+        background-position: 50% 42%;
+        background-size: 84%;
     }
-    h2{
+    h2 {
         font-size: 26px;
         background-position: 50% 45%;
         background-size: 87%;
     }
-    p, .more_about_restaurant{
+    p, .more_about_restaurant {
         font-size: 16px;
     }
-
-    section#aktualnosci > article > header{
+    section#aktualnosci > article > header {
         font-size: 18px;
     }
 }
