@@ -12,6 +12,12 @@ $('.napoje').click(function(){
 	$('#custom_drinks').fadeIn("slow");
 });
 
+$(document).keyup(function(e){
+	if (e.keyCode == 27){
+		closeMenu();
+	}
+});
+
 $('.close').click(function(){
 	closeMenu();
 });

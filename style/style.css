@@ -89,6 +89,11 @@ h1 {
     font-size: 38px;
     font-weight: 100;
     text-align: center;
+    text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 20px black;
+}
+
+h1:first-child{
+    margin-top: -35px;
 }
 
 h1 > a {
@@ -157,13 +162,13 @@ section#start > .wrapper > figure > img {
     height: auto;
 }
 
-section#start > .wrapper > figure > img, section#start > .wrapper > h1, section#start > .wrapper > .icons {
+/*section#start > .wrapper > figure > img, section#start > .wrapper > h1, section#start > .wrapper > .icons {
     -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1)) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.8));
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 1)) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.8));
-}
+}*/
 
 section#start > .wrapper > .icons {
-    margin-top: 5vh;
+    margin-top: 3vh;
     text-align: center;
 }
 
@@ -174,7 +179,7 @@ section#start > .wrapper > .icons > figure {
 }
 
 section#start > .wrapper > .icons > figure > a > img {
-    width: 50px;
+    width: 70px;
     transition: all 0.5s ease;
 }
 
@@ -254,21 +259,21 @@ section#menu > a:last-child {
 }
 
 section#menu > .wrapper > a > div > figure > img {
-    width: 40%;
-    -webkit-filter: drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
-    filter: drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+    width: 45%;
     transition: all 0.5s ease;
 }
 
 .figcaption_hover {
-    -webkit-filter: invert(1) drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    /*-webkit-filter: invert(1) drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
     filter: invert(1) drop-shadow(0 0 2px black) drop-shadow(0 0 10px black) drop-shadow(0 0 20px black);
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    transform: scale(0.9);*/
 }
 
 section#menu > .wrapper > a > div > figure > figcaption {
-    font-size: 70px;
+    font-size: 60px;
     color: white;
     text-shadow: 0 0 2px black 0 0 10px black;
     background-position: 50% 0px;
@@ -530,25 +535,51 @@ figcaption.text-content figcaption {
 /**********KONTAKT**********/
 
 #kontakt {
-    padding: 0;
     background: url(../img/backgrounds/patterns/kontakt.jpg);
     overflow: hidden;
-}
-
-#kontakt_www, #kontakt_miejsce {
-    width: 50%;
-    float: left;
+    padding: 0;
 }
 
 #kontakt .left-side {
     float: left;
-    width: 66%;
-    padding: 40px 0 40px 0;
+    padding: 70px 50px 70px 70px;
+    width: 60%;
+    display: inline-block;
+}
+
+#kontakt .left-side .kontakt-godziny-otwarcia article header {
+    font-family: "aleo";
+    font-size: 36px;
+    color: #663113;
+    margin-bottom: 10px;
+}
+
+#kontakt .left-side .kontakt-godziny-otwarcia article p span {
+    color: #663113;
+}
+
+#kontakt .left-side .kontakt-godziny-otwarcia article{
+    margin-bottom: 30px;
+}
+
+
+#kontakt_www, #kontakt_miejsce {
+    width: 48%;
+    float: left;
+}
+
+#kontakt_www{
+    margin-left: 2%;
+}
+
+#kontakt_miejsce{
+    margin-right: 2%;
 }
 
 #kontakt .right-side {
-    float: right;
-    width: 34%;
+    width: calc( 40% - 120px );
+    display: inline-block;
+    height: 100%;
 }
 
 #kontakt img {
@@ -558,7 +589,7 @@ figcaption.text-content figcaption {
 
 #kontakt figure {
     display: inline-block;
-    margin: 38px 0 38px 13%;
+    margin: 15px 0;
     width: 100%;
     transition: all .5s ease;
 }
@@ -580,10 +611,13 @@ figcaption.text-content figcaption {
 
 #kontakt a {
     text-decoration: none;
+    height: auto;
+    display: block;
 }
 
 #kontakt iframe {
-    height: 512px;
+    height: 568px;
+    /*height:100%;*/
 }
 
 
@@ -797,7 +831,7 @@ footer p > a:hover {
 }
 
 footer .left_side {
-    padding-top: 50px;
+    padding-top: 57px;
     padding-bottom: 15px;
     float: left;
     width: 30%;
@@ -823,7 +857,7 @@ footer .center img {
 }
 
 footer .right_side {
-    padding-top: 28px;
+    padding-top: 35px;
     padding-bottom: 22px;
     float: right;
     width: 30%;
@@ -836,6 +870,12 @@ footer .right_side p {
 
 footer .center-small {
     display: none;
+}
+
+@media screen and (max-width: 1446px) {
+    #kontakt figcaption{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1401px) {
@@ -887,11 +927,31 @@ footer .center-small {
         text-shadow: 0px 0px 2px white, 0px 0px 5px white, 0px 0px 15px white;
     }
     /**********KONTAKT**********/
-    #kontakt figcaption {
-        font-size: 16px;
+    #kontakt figcaption{
+        font-size: 18px;
+        margin-top: 23px;
     }
-    #kontakt figure {
-        margin-left: 6%;
+}
+
+@media screen and (max-width: 1184px){
+    #kontakt_www, #kontakt_miejsce{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #kontakt .left-side{
+        width: 40%;
+    }
+    #kontakt .right-side{
+        width: calc(60% - 120px);
+    }
+    #kontakt_www, #kontakt_miejsce{
+        margin-left: 0px;
+    }
+    #kontakt figure{
+        margin: 7px 0px;
+    }
+    #kontakt iframe {
+        height: 760px;
     }
 }
 
@@ -936,35 +996,8 @@ footer .center-small {
     }
     
     /**********KONTAKT**********/
-    #kontakt_www, #kontakt_miejsce {
-        width: 100%;
-    }
-    #kontakt .left-side {
-        width: 60%;
-        float: left;
-    }
-    #kontakt .right-side {
-        width: 40%;
-    }
-    #kontakt .left-side {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #kontakt figure {
-        margin: 16px 0 16px 18%;
-    }
-    #kontakt figcaption {
-        width: 60%;
-        margin-left: 35px;
-        margin-top: 18px;
-        font-size: 20px;
-    }
-    #kontakt img {
-        width: 60px;
-    }
-    #kontakt iframe {
-        height: 605px;
-    }
+
+
     /**********FOOTER**********/
     footer .center img {
         width: 180px;
@@ -973,10 +1006,10 @@ footer .center-small {
         font-size: 18px;
     }
     footer .right_side {
-        padding-top: 26px;
+        padding-top: 35px;
     }
     footer .left_side {
-        padding-top: 48px;
+        padding-top: 54px;
     }
 }
 
@@ -1077,9 +1110,27 @@ footer .center-small {
         opacity: 1;
         cursor: pointer;
     }
+    /* turn off all animations */
+    section#start > .wrapper > .icons > figure > a > img:hover{
+        transform: none;
+        filter: none;
+    }
+    #kontakt figure:hover{
+        filter: none;
+        padding-left: 0px; 
+    }
+    .figcaption_hover{
+        -webkit-filter: none;
+        filter: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+    #galeria figure > a > img:hover{
+        filter: none;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 851px) {
     /***BACKGROUNDS***/
     section#start {
         background-image: url(../img/backgrounds/start_small.jpg);
@@ -1096,27 +1147,7 @@ footer .center-small {
     footer .center {
         display: none;
     }
-    #kontakt .left-side, #kontakt .right-side {
-        width: 100%;
-    }
-    #kontakt img {
-        width: 11%;
-    }
-    #kontakt figcaption {
-        margin-left: 30px;
-        font-size: 22px;
-        margin-top: 3%;
-    }
-    #kontakt_www, #kontakt_miejsce {
-        margin-left: 20px;
-        width: 100%;
-    }
-    #kontakt figure {
-        width: 80%;
-    }
-    #kontakt iframe {
-        height: 400px;
-    }
+
     footer figure {
         padding-top: 30px;
         margin: 0 auto;
@@ -1136,6 +1167,19 @@ footer .center-small {
     footer .left_side, footer .right_side {
         width: 50%;
         display: block;
+    }
+    #kontakt .left-side{
+        width: calc(100% - 140px);
+        text-align: center;
+    }
+    #kontakt .right-side{
+        width: 100%;
+    }
+    #kontakt iframe{
+        height: 50vh;
+    }
+    #kontakt figcaption{
+        width: calc(100% - 168px);
     }
 }
 
@@ -1168,9 +1212,7 @@ footer .center-small {
     section#aktualnosci > h2 {
         padding-bottom: 20%;
     }
-    #kontakt figure {
-        margin-left: 10%;
-    }
+
     footer {
         position: relative;
     }
@@ -1180,6 +1222,7 @@ footer .center-small {
         text-align: center;
         padding-bottom: 70px;
         margin-left: 80px;
+        padding-top: 15px;
     }
     footer .left_side {
         width: auto;
@@ -1197,27 +1240,34 @@ footer .center-small {
         display: none;
     }
 }
-
+@media (max-width: 512px) {
+    #kontakt .left-side{
+        padding: 50px;
+        width: calc(100% - 100px);
+        text-align: left;
+    }
+    #kontakt .left-side .kontakt-godziny-otwarcia{
+        text-align: center;
+    }
+    #kontakt figcaption{
+        width: calc(100% - 81px);
+    }
+    #kontakt .left-side .kontakt-godziny-otwarcia article p{
+        font-size: 22px;
+    }
+}
 @media (max-width: 500px) {
     /********CUSTOM MENUS********/
     #custom_menu > .wrapper > .col1, #custom_menu > .wrapper > .col2, #custom_drinks > .wrapper > .col1, #custom_drinks > .wrapper > .col2 {
         width: 100%;
     }
-    #kontakt figure {
-        margin-left: 7%;
-    }
+
     /********AKTUALNOSCI********/
     section#aktualnosci > article {
         background: none;
         padding-left: 0px;
     }
-    #kontakt figcaption {
-        font-size: 16px;
-        width: auto;
-    }
-    #kontakt iframe {
-        height: 350px;
-    }
+
     section#start > .wrapper > h1 {
         font-size: 22px;
     }
@@ -1245,15 +1295,15 @@ footer .center-small {
     }
 }
 
-@media (max-width: 400px) {
-    #kontakt figure {
-        margin-left: 0;
+@media (max-width: 430px) {
+    #kontakt img{
+        float: none;
     }
-    #kontakt figcaption {
-        margin-left: 10px;
-        font-size: 14px;
+    #kontakt figcaption{
+        width: 100%;
+        margin: 11px 0px 20px 0px;
     }
-    #kontakt iframe {
-        height: 250px;
+    #kontakt figure{
+        text-align: center;
     }
 }
